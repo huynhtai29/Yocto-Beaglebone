@@ -39,7 +39,7 @@ KERNEL_DEVICETREE = " \
 KERNEL_DEVICETREE += "${@oe.utils.conditional('ENABLE_TI_UIO_DEVICES', '1', 'am335x-icev2-pru-excl-uio.dtb', '', d)}"
 
 UBOOT_ARCH = "arm"
-UBOOT_MACHINE = "am335x_boneblack_vboot_defconfig"
+UBOOT_MACHINE = "am335x_evm_config"
 
 UBOOT_ENTRYPOINT = "0x80008000"
 UBOOT_LOADADDRESS = "0x80008000"
